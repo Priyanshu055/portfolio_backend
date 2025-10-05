@@ -1,30 +1,8 @@
-# Portfolio Setup TODO
-
-1. Set up backend with Express ✅
-   - Initialize npm in backend directory ✅
-   - Install Express and other dependencies ✅
-   - Create server.js with basic setup and route for serving resume PDF ✅
-
-2. Set up frontend with React ✅
-   - Create React app in frontend directory ✅
-   - Install additional dependencies if needed ✅
-
-3. Build portfolio components ✅
-   - Create Header, About, Skills, Projects, Resume, Contact components ✅
-   - Style with CSS ✅
-
-4. Integrate resume PDF
-   - Ensure resume.pdf is placed in backend/uploads
-
-5. Connect frontend and backend ✅
-   - Add API calls if needed for dynamic data ✅
-
-6. Test and run the application
-   - Start backend server
-   - Start frontend development server
-   - Verify portfolio displays correctly
-
-7. Push to GitHub
-   - Create GitHub repository
-   - Add remote origin
-   - Push commits
+- [x] Add 'Machine Learning' to skills in Skills.js
+- [x] Add portfolio project to Projects.js
+- [x] Create SocialLinks.js component with LeetCode, GitHub, Instagram links
+- [x] Create SocialLinks.css for styling
+- [x] Import and add SocialLinks component to App.js
+- [x] Add background color #4a5759 to App.css
+- [x] Add picture to About.js (note: place protfolio_img.jpg in fronted/public/)
+- [x] Update Header.js navigation to include link to social links section

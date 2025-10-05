@@ -2,7 +2,7 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
-  const skills = ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'HTML', 'CSS'];
+  const skills = ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'HTML', 'CSS', 'Machine Learning', 'DSA in C++'];
 
   return (
     <section id="skills" className="skills">
