@@ -14,12 +14,17 @@
    - Style with CSS ✅
 
 4. Integrate resume PDF
-   - Ensure resume.pdf is placed in backend and served via API
+   - Ensure resume.pdf is placed in backend/uploads
 
-5. Connect frontend and backend
-   - Add API calls if needed for dynamic data
+5. Connect frontend and backend ✅
+   - Add API calls if needed for dynamic data ✅
 
 6. Test and run the application
    - Start backend server
    - Start frontend development server
    - Verify portfolio displays correctly
+
+7. Push to GitHub
+   - Create GitHub repository
+   - Add remote origin
+   - Push commits
