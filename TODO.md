@@ -1,8 +1,5 @@
-- [x] Add 'Machine Learning' to skills in Skills.js
-- [x] Add portfolio project to Projects.js
-- [x] Create SocialLinks.js component with LeetCode, GitHub, Instagram links
-- [x] Create SocialLinks.css for styling
-- [x] Import and add SocialLinks component to App.js
-- [x] Add background color #4a5759 to App.css
-- [x] Add picture to About.js (note: place protfolio_img.jpg in fronted/public/)
-- [x] Update Header.js navigation to include link to social links section
+# TODO List for Portfolio Redesign
+
+- [x] Update App.css: Add modern font (Google Fonts), gradient background, improved color scheme, and ensure responsiveness.
+- [x] Update Header.css: Make header more stylish with hover effects on navigation links.
+- [x] Update About.css: Enhance About section with card-like design, better spacing, shadows, subtle animation, larger profile pic with border/glow effect.
