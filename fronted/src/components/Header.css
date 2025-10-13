@@ -1,13 +1,13 @@
 .header {
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  color: white;
+  background: #000000;
+  color: #ffffff;
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #333;
 }
 
 .header nav {
@@ -21,10 +21,14 @@
 .header h1 {
   font-weight: 700;
   font-size: 1.5rem;
-  background: linear-gradient(45deg, #00d4ff, #090979);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.header h1:hover {
+  color: #2563eb;
+  transform: scale(1.05);
 }
 
 .header ul {
@@ -34,29 +38,22 @@
 }
 
 .header a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 400;
-  transition: all 0.3s ease;
-  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .header a:hover {
-  color: #00d4ff;
-  transform: translateY(-2px);
+  color: #2563eb;
 }
 
-.header a::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
-  left: 0;
-  background: linear-gradient(45deg, #00d4ff, #090979);
-  transition: width 0.3s ease;
-}
+@media (max-width: 768px) {
+  .header ul {
+    gap: 1rem;
+  }
 
-.header a:hover::after {
-  width: 100%;
+  .header a {
+    font-size: 0.9rem;
+  }
 }
