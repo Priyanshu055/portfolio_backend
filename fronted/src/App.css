@@ -4,12 +4,56 @@
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  background: #000000;
-  color: #ffffff;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background: #0a0a0a;
+  color: #ffffff;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+/* Dark Background with Neon Particles */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 40% 40%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
+  animation: neonFloat 20s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes neonFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.8; }
+  33% { transform: translateY(-20px) rotate(120deg); opacity: 1; }
+  66% { transform: translateY(15px) rotate(240deg); opacity: 0.9; }
+}
+
+/* Neon Grid Overlay */
+.App::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridShift 30s linear infinite;
+  z-index: -1;
+}
+
+@keyframes gridShift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
 }

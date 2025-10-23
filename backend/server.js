@@ -15,6 +15,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Routes
 app.get('/api/resume', (req, res) => {
   const resumePath = path.join(__dirname, 'uploads', 'resume.pdf');
+  res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
   res.sendFile(resumePath, (err) => {
     if (err) {
       res.status(404).json({ message: 'Resume not found' });

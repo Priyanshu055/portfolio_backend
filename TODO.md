@@ -1,10 +1,15 @@
-# Portfolio Style Update to Professional Look (Inspired by sakshamkatiyar.vercel.app)
+# Portfolio Redesign Tasks
 
-## Tasks
+## Completed
 
-- [x] Update App.css: Switch to light background, professional color scheme (whites, grays, subtle blues), improve readability
-- [x] Update Header.css: Simplify header design, remove gradients, use solid professional colors, ensure responsiveness
-- [x] Update About.css: Implement grid layout for sections, remove glassmorphism, use clean design with subtle shadows, make everything visible and responsive
-- [x] Update Skills.css: Use grid for skill items, simplify animations, minimal hover effects, attractive grid structure
-- [x] Check other components (Projects, Contact, etc.) for grid layouts if needed
-- [x] Test changes: Run the frontend app to verify the professional grid-based look
+- [x] Initial glassmorphism design with light theme
+- [x] Reduced projects to 3 items
+- [x] Redesign with dark neon theme
+  - [x] Update App.css for dark background with neon particles
+  - [x] Update Header.css for dark header with neon blue accents
+  - [x] Update About.css for dark card with neon borders
+  - [x] Update Skills.css for improved grid with neon hover effects
+  - [x] Update Projects.css for three-column grid with dark cards and neon highlights
+  - [x] Update Contact.css for dark form with neon inputs and button
+- [ ] Test the new design visually
+- [ ] Adjust based on feedback if needed
