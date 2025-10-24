@@ -25,7 +25,7 @@ const About = () => {
       <div className="about-content">
         <div className="left-side">
           <div className="profile-container">
-            <img src="./portfolio.png" alt="My Picture" className="profile-pic" />
+            <img src="C:\Users\PRIYANSHU\OneDrive\Desktop\my-portfolio\fronted\public\portfolio_img.jpg" alt="My Picture" className="profile-pic" />
             <div className="hover-quote">Curious mind. Clean code </div>
           </div>
           <div className="key-facts">
