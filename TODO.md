@@ -13,3 +13,10 @@
   - [x] Update Contact.css for dark form with neon inputs and button
 - [ ] Test the new design visually
 - [ ] Adjust based on feedback if needed
+
+## New Tasks for About Section Redesign
+
+- [x] Update About.js: Implement split layout (left: profile pic with key facts, right: story-based text). Add typing animation for intro, hover effect on pic to reveal quote, animated timeline for learning journey.
+- [x] Update About.css: Adjust styles for new layout, add gradient cards, glowing borders, animations for timeline and hover effects.
+- [ ] Test the updated about section visually.
+- [ ] Adjust based on feedback if needed.
