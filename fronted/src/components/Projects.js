@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     { title: 'Project 2', description: 'Description of project 2', link: '#' },
     { title: 'My Portfolio', description: 'A personal portfolio website showcasing my skills and projects, built with React.', link: 'https://github.com/Priyanshu055' },
-    { title: 'InternMatch - Internship Recommendation System', description: ['Developed an AI-powered internship recommendation system to match students with suitable opportunities', 'Implemented machine learning algorithms for skill-based matching and preference analysis', 'Built responsive web interface using React.js and Node.js for seamless user experience', 'Integrated user authentication and profile management features', 'Deployed on cloud platform with real-time data processing capabilities'], link: 'https://github.com/Priyanshu055/InternMatch' },
+    { title: 'InternMatch - Internship Recommendation System', description: ['Developed an internship recommendation system to match students with suitable opportunities and ', 'Implemented for skill-based matching and preference analysis . ', 'Built responsive web interface using React.js and Node.js for seamless user experience ', 'Integrated user authentication and profile management features .'], link: 'https://github.com/Priyanshu055/InternMatch' },
   ];
 
   return (

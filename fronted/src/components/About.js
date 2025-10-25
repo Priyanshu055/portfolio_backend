@@ -32,10 +32,10 @@ const About = () => {
           <ul>
             <li>🎓 Third-year B.Tech Student (GLBITM)</li>
             <li>💻 MERN Stack (proficient)</li>
-            <li>Problem Solver(1450+ rating leetcode)</li>
+            <li>🧩 Problem Solver(1450+ rating leetcode)</li>
             <li>🚀 Project-Based Learner</li>
             <li>🔧 Git & Debugging(beginner) </li>
-            <li>Currently upskilling in ML algorithm</li>
+            <li>🤖 Currently upskilling in ML algorithm</li>
           </ul>
         </div>
         <div className="about-text-card">
@@ -48,7 +48,7 @@ const About = () => {
             <div className="timeline-dot"></div>
             <div className="timeline-content">
               <h4>Started Coding</h4>
-              <p>Started upskilling core concept of basic programming and development when i was in 2nd semester.</p>
+              <p>Started upskilling core concept of basic programming and development during the 2nd semester of my college.</p>
             </div>
           </div>
           <div className="timeline-item">
