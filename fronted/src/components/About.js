@@ -41,7 +41,7 @@ const About = () => {
         <div className="right-side">
           <div className="about-text-card">
             <p>I am a driven third-year B.Tech student with a deep passion for software development and problem-solving. My core technical expertise lies within the MERN Stack, where I am proficient in designing robust backend APIs with Node.js/Express.js, managing data with MongoDB, and crafting dynamic, user-friendly interfaces using React.</p>
-            <p>I believe the best way to learn is by doing. I am consistently building and deploying real-world applications—not just academic exercises—to solidify my understanding of the development lifecycle, from initial design to deployment and optimization. This project-based approach has sharpened my skills in version control (Git), debugging, and writing clean, maintainable code.</p>
+            <p>I believe the best way to learn is by doing. I am consistently building and deploying real-world applications—not just academic exercises—to solidify my understanding of the development lifecycle, from initial design to deployment and optimization.</p>
           </div>
           <div className="timeline">
             <h3>My Learning Journey</h3>
