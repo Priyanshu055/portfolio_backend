@@ -13,6 +13,13 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Routes
+app.post('/api/contact', (req, res) => {
+  const { name, email, message } = req.body;
+  console.log(`New contact message from ${name} (${email}): ${message}`);
+  // In a real app, you could save to database or send email here
+  res.json({ message: 'Message received successfully!' });
+});
+
 app.get('/api/resume', (req, res) => {
   const resumePath = path.join(__dirname, 'uploads', 'resume.pdf');
   res.setHeader('Content-Disposition', 'attachment; filename="resume.pdf"');
