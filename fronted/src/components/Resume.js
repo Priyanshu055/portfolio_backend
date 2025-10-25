@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section id="resume" className="resume">
       <h2>Resume</h2>
-      <a href="http://localhost:5000/api/resume" download="resume.pdf">
+      <a href="https://my-portfolio-backend-h8ej.onrender.com/api/resume" download="resume.pdf">
         <button>Download Resume</button>
       </a>
     </section>
