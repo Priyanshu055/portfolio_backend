@@ -24,7 +24,7 @@ const About = () => {
       <div className="typing-intro">{typedText}<span className="cursor">|</span></div>
       <div className="about-content">
         <div className="profile-container">
-          <img src="/profile.jpg" alt="My Picture" className="profile-pic" />
+          <img src="/profile.jpg" alt="Priyanshu Mishra" className="profile-pic" />
           {/* <div className="hover-quote">Curious mind. Clean code </div> */}
         </div>
         <div className="key-facts">
