@@ -1,6 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -12,12 +14,40 @@ app.use(express.json());
 // Serve static files (for resume PDF)
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
+// Email transporter setup
+const transporter = nodemailer.createTransport({
+  service: 'gmail', // or your email service
+  auth: {
+    user: process.env.EMAIL_USER, // Your email
+    pass: process.env.EMAIL_PASS  // Your email password or app password
+  }
+});
+
 // Routes
-app.post('/api/contact', (req, res) => {
+app.post('/api/contact', async (req, res) => {
   const { name, email, message } = req.body;
-  console.log(`New contact message from ${name} (${email}): ${message}`);
-  // In a real app, you could save to database or send email here
-  res.json({ message: 'Message received successfully!' });
+
+  try {
+    // Send email to yourself
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER, // Send to yourself
+      subject: `New Contact Message from ${name}`,
+      html: `
+        <h3>New Contact Message</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `
+    });
+
+    console.log(`Email sent successfully from ${name} (${email})`);
+    res.json({ message: 'Message sent successfully!' });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).json({ message: 'Failed to send message. Please try again.' });
+  }
 });
 
 app.get('/api/resume', (req, res) => {
