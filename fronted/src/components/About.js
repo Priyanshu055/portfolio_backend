@@ -34,7 +34,7 @@ const About = () => {
               <li>🎓 Third-year B.Tech Student</li>
               <li>💻 MERN Stack Expert</li>
               <li>🚀 Project-Based Learner</li>
-              <li>🔧 Git & Debugging </li>
+              <li>🔧 Git & Debugging(beginner) </li>
             </ul>
           </div>
         </div>
