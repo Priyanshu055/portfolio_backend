@@ -1,7 +1,4 @@
 {
-  "buildCommand": "cd fronted && npm install && npm run build",
-  "outputDirectory": "fronted/build",
-  "installCommand": "npm install",
   "redirects": [
     {
       "source": "/(.*)",
