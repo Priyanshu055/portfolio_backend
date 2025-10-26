@@ -1,14 +1,11 @@
-# TODO: Deploy Backend to Render and Connect to Vercel Frontend
+# TODO: Deploy Backend to Railway and Frontend to Vercel
 
-- [x] Create separate GitHub repository for backend code
-- [x] Move backend code to new repository root and clean up
-- [x] Update backend package.json to include nodemailer and dotenv dependencies
-- [x] Create .env.example file for environment variables template
-- [x] Initialize git in backend folder and push to new GitHub repo
-- [x] Deploy backend to Render as Node.js web service
-- [x] Configure environment variables on Render (EMAIL_USER, EMAIL_PASS, PORT)
-- [x] Update frontend Resume.js to use Render API URL instead of localhost
-- [x] Update frontend Contact.js to use full Render API URL (since it's no longer relative)
-- [x] Test API endpoints on Render
-- [x] Test full frontend-backend integration
-- [x] Add root route handler to fix 404 on root URL
+- [ ] Create new GitHub repository for backend code (portfolio-backend)
+- [ ] Push portfolio-backend code to the new GitHub repo
+- [ ] Deploy backend to Railway from GitHub repo
+- [ ] Configure environment variables on Railway (EMAIL_USER, EMAIL_PASS, PORT=5000)
+- [ ] Deploy frontend to Vercel from GitHub repo
+- [ ] Update frontend Contact.js to use Railway backend URL
+- [ ] Update frontend Resume.js to use Railway backend URL
+- [ ] Test API endpoints on Railway
+- [ ] Test full frontend-backend integration

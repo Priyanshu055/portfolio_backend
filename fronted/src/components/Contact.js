@@ -20,7 +20,7 @@ const Contact = () => {
     setSubmitMessage('');
 
     try {
-      const response = await fetch('https://my-portfolio-backend-h8ej.onrender.com/api/contact', {
+      const response = await fetch('http://localhost:5000/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
